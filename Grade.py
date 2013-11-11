@@ -24,19 +24,19 @@ steve = {
 #. Put the dictionaries in a list called students
 students = [dave, nicole, steve]
 
-#Print out all the data in your students list
+#Print out all the data in students list
 for student in students:
     print student['name']
     print student['homework']
     print student['quizzes']
     print student['tests']
 
-#. A function that takes a list of numbers as the parameter and returns the average of that list. 
+#. A function that calculates average of a list. 
 def average(grades):
     avg = sum(grades[0:])/len(grades)
     return avg
 
-#. A function that takes a student dictionary as input and returns his/her weighted average.
+#. A function that takes a (student) dictionary as input and returns his/her weighted average.
 def get_average(student):
     wtd = 0.10*average(student['homework']) + 0.30*average(student['quizzes']) + 0.60*average(student['tests'])
     return wtd
